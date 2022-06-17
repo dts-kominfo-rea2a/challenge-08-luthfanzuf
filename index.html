@@ -46,10 +46,10 @@
         let li = document.createElement('li')
         li.textContent = input.value
 
-        if(e.key === "Enter" && input.value != "") {
+        if(e.key === "Enter" /*&& input.value != ""*/) {
           output.appendChild(li);
           input.value = ""
-        } else if (e.target.id === "todo-submit" && input.value != "") {
+        } else if (e.target.id === "todo-submit" /*&& input.value != ""*/) {
           output.appendChild(li);
           input.value = ""
 
